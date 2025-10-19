@@ -1,0 +1,6 @@
+
+Requirement ID,Requirement Description,Test Case ID(s)
+REQ-01,The system shall allow users to log in with their registered credentials.,TC-001, TC-002
+REQ-02,The system shall allow users to add products to their shopping cart.,TC-003
+REQ-03,The system shall allow users to complete the checkout process.,TC-004
+REQ-04,The system shall allow users to log out.,TC-005

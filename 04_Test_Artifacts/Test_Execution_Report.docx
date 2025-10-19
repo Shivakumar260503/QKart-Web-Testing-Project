@@ -1,0 +1,33 @@
+
+# Test Execution Report: QKart Application
+
+**Report Date:** October 26, 2023
+
+**Author:** [Your Name]
+
+---
+
+### 1. Summary
+
+This report summarizes the results of the manual testing cycle executed for the QKart web application. The testing focused on critical user workflows, and the results indicate the overall quality and stability of the modules in scope.
+
+### 2. Execution Summary
+
+| Metric                  | Count |
+| ----------------------- | ----- |
+| **Total Test Cases**    | 15    |
+| **Test Cases Executed** | 15    |
+| **Passed**              | 12    |
+| **Failed**              | 2     |
+| **Blocked**             | 1     |
+| **Pass Percentage**     | 80%   |
+
+### 3. Key Findings
+
+- The core functionalities for Login, Checkout, and Logout are working as expected.
+- A major defect was identified in the "Add to Cart" module where the item count was not updating correctly (BUG-001).
+- One minor UI issue was found on the Login page.
+
+### 4. Recommendation
+
+It is recommended that the development team address the high-priority defect (BUG-001) before the production release. The minor UI issue can be scheduled for a future sprint.

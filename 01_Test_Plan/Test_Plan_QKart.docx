@@ -1,0 +1,50 @@
+
+# Test Plan: QKart E-Commerce Application
+
+**Document Version:** 1.0
+
+**Author:** [Your Name]
+
+---
+
+### 1. Objective
+
+The primary objective of this test plan is to define the scope, strategy, and process for testing the QKart web application. This plan will ensure that all critical functionalities are validated, and the application meets the required quality standards before deployment.
+
+### 2. Scope
+
+#### In Scope:
+- **Functionality:** Login, Add to Cart, Checkout, and Logout modules.
+- **Browsers:** Google Chrome (latest version).
+- **Platform:** Desktop web.
+
+#### Out of Scope:
+- Performance, load, and stress testing.
+- API-level testing.
+- Mobile browser compatibility.
+- Testing of non-critical pages (e.g., About Us, Contact).
+
+### 3. Entry and Exit Criteria
+
+- **Entry Criteria:**
+  - The application's test environment is stable and accessible.
+  - All feature development for the specified modules is complete.
+
+- **Exit Criteria:**
+  - All high-priority test cases have been executed.
+  - No open critical or high-severity bugs.
+  - Test Execution Report is signed off by the QA lead.
+
+### 4. Tools Used
+
+- **Test Management:** MS Excel / Google Sheets
+- **Bug Tracking:** Jira (simulated via a spreadsheet)
+- **Documentation:** MS Word / Google Docs
+- **Artifacts:** Screenshot capture tool
+
+### 5. Deliverables
+
+- Test Cases Document
+- Bug Report Log
+- Requirement Traceability Matrix
+- Test Execution Report
