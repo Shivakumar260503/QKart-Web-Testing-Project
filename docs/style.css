@@ -1,0 +1,256 @@
+
+/* --- CSS Variables for Theming --- */
+:root {
+    --bg-color: #ffffff;
+    --bg-light-color: #f4f7f9;
+    --text-color: #333333;
+    --heading-color: #1a253c;
+    --primary-color: #007bff;
+    --border-color: #dddddd;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+body.dark-mode {
+    --bg-color: #1a253c;
+    --bg-light-color: #2c3a56;
+    --text-color: #c0c5d1;
+    --heading-color: #ffffff;
+    --primary-color: #36a3ff;
+    --border-color: #404f70;
+    --card-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* --- General Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light-color);
+    transition: background-color 0.3s;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Dark Mode Toggle --- */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* --- Header --- */
+.header {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    color: var(--heading-color);
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+}
+
+/* --- Modules Section --- */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.module-card {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+/* --- Deliverables Section --- */
+.deliverables-list {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.deliverables-list li {
+    background-color: var(--bg-light-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* --- Screenshots Section --- */
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.screenshot-card {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.screenshot-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-caption {
+    padding: 1.5rem;
+}
+
+.card-caption h3 {
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+/* --- About Section --- */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #52baff;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--heading-color);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h2 { font-size: 2rem; }
+    .header h1 { font-size: 2.5rem; }
+    .nav-menu { display: none; } /* Simple responsive navbar */
+    .about-content { flex-direction: column; text-align: center; }
+}
