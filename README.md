@@ -68,6 +68,7 @@ This project includes the following key testing deliverables:
 
 ## 6. Author
 
-- **[Your Name]**
-- [Your LinkedIn Profile URL]
-- [Your Portfolio/GitHub URL]
+- **Sivakumar Yadav**
+- [LinkedIn Profile](https://www.linkedin.com/in/sivakumar-yadav-9a6809312/)
+- [GitHub Profile](https://github.com/Shivakumar260503)
+- [Portfolio](https://shivakumar260503.github.io/my-portfolio/)
